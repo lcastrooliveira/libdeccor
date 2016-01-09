@@ -1,0 +1,14 @@
+libdeccor.c
+deccor.c
+deccor.h
+deccor.h -> ../deccor.h
+libdeccor.h
+>compiler=C
+>memtype=cmm main ram compact
+>optimize=-Os
+>-m32bit-doubles
+>-fno-exceptions
+>defs::-std=c99
+>-lm
+>-create_library
+>BOARD::ACTIVITYBOARD
