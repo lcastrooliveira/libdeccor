@@ -10,16 +10,22 @@
 #define FIM_LINHA 6
 #define DELAY 7
 
+//Tarefa a ser executada
+#define MAPEAMENTO 15
+#define PERCURSO 16
+
 #define TRUE 1
 #define FALSE 0;
 
 #include "simpletools.h"
 
 int lerValorSensor(void);
-int getCorAtual(void);
-int getCorAnterior(void);
-int getLeituraAtual(void);
-int getEstadoAtual(void);
 void startLeitura(void);
 int avancar1Quadrado(void);
+volatile short num_vertices;
+volatile short tarefa;
+volatile int leitura_atual;
 
+volatile unsigned char cor_atual;
+volatile unsigned char cor_anterior;
+volatile unsigned char estado_atual;
