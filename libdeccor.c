@@ -3,13 +3,7 @@
 #include "deccor.h"
 #include "ping.h"
 
-// Valor da leitura
-int leitura_atual;
-int cor_atual;
-int cor_anterior;
-int estado_atual;
-  
-int nova_leitura;
+
 
 int main()                    
 {  
@@ -22,10 +16,6 @@ int main()
   //pause(1000);
   while(ping_cm(11) >= 5)
   {
-    leitura_atual = getLeituraAtual();
-    cor_atual = getCorAtual(); 
-    cor_anterior = getCorAnterior();
-    estado_atual = getEstadoAtual();
     print("%cESTADO_ATUAL: = %d\n",HOME, estado_atual);
     print("COR_ATUAL: = %d\n", cor_atual);
     print("COR_ANTERIOR: = %d\n", cor_anterior);

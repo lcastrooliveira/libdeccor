@@ -15,13 +15,15 @@
 #define PERCURSO 16
 
 #define TRUE 1
-#define FALSE 0;
+#define FALSE 0
+#define MSPEED 16
 
 #include "simpletools.h"
 
 int lerValorSensor(void);
 void startLeitura(void);
 int avancar1Quadrado(void);
+int avancar1QuadradoVolta(void);
 volatile short num_vertices;
 volatile short tarefa;
 volatile int leitura_atual;
